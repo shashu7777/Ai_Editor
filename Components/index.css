@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #f8f9fc;
+}
+.heading h1{
+    color: #4c4d4c;
+    font-family: 'popins', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    font-size: 27px;
+    padding-top: 10px;
+}
+.uploadImage div.uploadContainer{
+    background-color: #fdfcfc;
+    min-height: 320px;
+    border-radius: 20px;
+    color: black;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    
+}
+.buttons{
+    gap: 5px;
+    font-family:'popins', sans-serif ;
+    font-size: 15px;
+    font-weight: 600;
+  
+ 
+}
+.btn-primary{
+    background-color: #0f3460;
+    border:none;
+}
+
+.btn-primary:hover{
+background-color: #124583;
+}
+
+.uploadImage-dashedContainer{
+border: 4px dashed rgb(190, 190, 190);
+    width: 1000px;
+    border-radius: 10px;
+   min-height: 150px;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all 0.5s ease;
+   
+}
+
+.uploadImage-dashedContainer p#uploadImagePlaceholder{
+    font-family:'popins',sans-serif;
+    font-weight: 600;
+    color: #8bb5ea;
+}
+.compressionOptions div.selectOptions{
+    width: 50%;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgb(220, 230, 220);
+    margin-left: 25%;    
+}
+
+#inputContainer {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    align-items: center;  
+}
+
+#inputContainer label {
+    margin-right: 5px;
+}
+#inputContainer input:focus{
+    border: 1px solid #124583;
+    outline: none; 
+}
+#inputContainer input{
+    width:150px;
+    margin-bottom: 10px;
+   
+}
+.radio-container {
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;    
+}
+.radio-container label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#imageInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+}
+
+.clearImageBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: rgb(255, 43, 43);
+}
+
+.arrowdwnldButton{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #124583;
+    margin: 2px;
+}
+
+#imageName{
+    background-color: #4c4d4c;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    margin: 2px;
+}
+
+.buttons:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+/* CSS for the loader */
+.spinner {
+    border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #124583;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+            transform: rotate(0deg);
+        }
+    
+        100% {
+            transform: rotate(360deg);
+        }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content:space-between;    
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;   
+}
+
+.left-buttons{
+    margin-left: 50px;
+}
+
+.right-buttons{
+    margin-right: 50px;
+}
+.imageNamePara{
+    color:#4c4d4c;
+    font-family: 'popins', sans-serif;
+    font-weight: 600;
+    margin-top: 5px;
+}
